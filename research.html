@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ewon Baik &middot; Research</title>
+<style>
+  :root {
+    --ink: #1c1c1c;
+    --muted: #5a5a5a;
+    --accent: #6b1f2a;
+    --line: #e2ddd5;
+    --paper: #fbfaf7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, 'Times New Roman', serif;
+    line-height: 1.65;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .sitenav {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--line);
+  }
+  .sitenav a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+  }
+  .sitenav a:hover { border-bottom-color: var(--accent); }
+  .sitenav a.active {
+    color: var(--ink);
+    font-weight: 600;
+    border-bottom-color: var(--ink);
+  }
+  .bio {
+    display: flex;
+    gap: 44px;
+    padding: 40px 0 40px;
+    border-bottom: 1px solid var(--line);
+    align-items: flex-start;
+  }
+  .bio-col-left {
+    flex: 0 0 180px;
+    text-align: center;
+  }
+  .photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 18px;
+    border: 1px solid var(--line);
+  }
+  .contact-links-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.95rem;
+  }
+  .contact-links-vertical a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+  .contact-links-vertical a:hover { border-bottom-color: var(--accent); }
+  .bio-col-right {
+    flex: 1;
+    min-width: 0;
+    padding-top: 4px;
+  }
+  h1 {
+    font-size: 2.1rem;
+    font-weight: 500;
+    margin: 0 0 6px;
+    letter-spacing: 0.2px;
+  }
+  .role {
+    color: var(--muted);
+    font-size: 1.05rem;
+    margin: 0 0 20px;
+  }
+  .intro p {
+    margin: 0 0 16px;
+  }
+  @media (max-width: 600px) {
+    .bio { flex-direction: column; align-items: center; text-align: center; }
+    .bio-col-left { flex: none; }
+    .bio-col-right { text-align: left; }
+  }
+  section {
+    padding: 44px 0;
+  }
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0 0 18px;
+    color: var(--ink);
+  }
+  h3 {
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin: 36px 0 14px;
+    color: var(--ink);
+  }
+  h3:first-of-type { margin-top: 0; }
+  .diss-title {
+    margin: 0 0 16px;
+  }
+  p { margin: 0 0 16px; }
+  .meta {
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+  ul { margin: 0 0 16px; padding-left: 22px; }
+  li { margin-bottom: 10px; }
+  .pub {
+    margin-bottom: 22px;
+    padding-left: 0;
+    list-style: none;
+  }
+  .pub-title { font-style: italic; }
+  .pub-venue { color: var(--muted); }
+  .course-list {
+    padding-left: 0;
+    list-style: none;
+  }
+  .course-list li {
+    margin-bottom: 8px;
+  }
+  .course-title { font-style: italic; }
+  .placeholder {
+    color: var(--accent);
+    font-size: 0.85rem;
+    background: #f3e9e6;
+    padding: 1px 6px;
+    border-radius: 3px;
+  }
+  .btn {
+    display: inline-block;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 9px 18px;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 0.95rem;
+    margin-right: 12px;
+  }
+  .btn:hover { background: var(--accent); color: #fff; }
+  footer {
+    padding: 32px 0 60px;
+    color: var(--muted);
+    font-size: 0.88rem;
+    text-align: center;
+    border-top: 1px solid var(--line);
+    margin-top: 12px;
+  }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="sitenav">
+    <a href="index.html">About</a>
+    <a href="research.html" class="active">Research</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="cv.html">CV</a>
+  </div>
+
+  <section id="research">
+
+    <h3>Dissertation (Book Project)</h3>
+    <p class="diss-title"><strong>Politics in Translation: Immigrants&rsquo; Dual and Dynamic Political Preferences</strong></p>
+    <p>
+      My book project asks how people navigate political preferences between two countries. Challenging
+      existing narratives of preference formation and immigrant incorporation, I reframe immigrants who arrive
+      in a new country as carriers of dual and dynamic political identities, rather than political blank
+      slates. In doing so, I recast immigrant incorporation as a process of strategic political adjustment
+      rather than one-way assimilation. The book shows this via three pathways: (1) the varying portability of
+      political preferences across national contexts, (2) the persistence of pre-migration political
+      socialization after migration, and (3) the pressures that geopolitical rivalry places on
+      immigrants&rsquo; political alignments. Together, these findings reveal political behavior as not merely
+      a domestic phenomenon, but a transnational process shaped by comparative institutions and geopolitics.
+    </p>
+    <p><strong>Chapters:</strong></p>
+    <ul>
+      <li><strong><em>Portable Politics? A Cross-National Model of Immigrants&rsquo; Dual Preferences</em></strong></li>
+      <li><strong><em>Do Political Generations Travel? Birth Cohorts and Pre-migration Socialization</em></strong></li>
+      <li><strong><em>The Cost of Taking Sides? US-China Rivalry and Immigrant Political Moderation</em></strong></li>
+    </ul>
+
+    <h3>Publications</h3>
+    <ul class="pub">
+      <li>
+        <span class="pub-title">&ldquo;Pivotal power of small states to save the international liberal
+        economic order: the case from East Asia&rdquo;</span> (w/ Trissia Wijaya, Jessica C. Liao, and Saori
+        Katada, 2025), <span class="pub-venue"><a
+        href="https://www.tandfonline.com/doi/full/10.1080/09512748.2024.2369700">The Pacific
+        Review</a></span>, 38(2), 285&ndash;316.
+      </li>
+    </ul>
+
+    <h3>Working Papers</h3>
+    <ul class="pub">
+      <li>
+        <span class="pub-title">&ldquo;Marry, Work, Migrate? A Wider View of the Implications of Shifting
+        Gender Politics&rdquo;</span> (w/ Christian Dyogi Phillips and Jeonghyun Kim)
+      </li>
+      <li>
+        <span class="pub-title">&ldquo;Conservative or Christian? North Korean Refugees&rsquo; Political
+        Identification in South Korea&rdquo;</span>
+      </li>
+      <li>
+        <span class="pub-title">&ldquo;Great Power Rivalry and Political Ideology: The Geopolitical
+        Foundations of Domestic Left-Right Cleavages&rdquo;</span>
+      </li>
+      <li>
+        <span class="pub-title">&ldquo;Wartime &lsquo;Comfort Women&rsquo; and the Gendered Conditions of
+        National Acceptance&rdquo;</span>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> Ewon Baik
+  </footer>
+
+</div>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

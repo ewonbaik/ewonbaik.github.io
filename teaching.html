@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ewon Baik &middot; Teaching</title>
+<style>
+  :root {
+    --ink: #1c1c1c;
+    --muted: #5a5a5a;
+    --accent: #6b1f2a;
+    --line: #e2ddd5;
+    --paper: #fbfaf7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, 'Times New Roman', serif;
+    line-height: 1.65;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .sitenav {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--line);
+  }
+  .sitenav a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+  }
+  .sitenav a:hover { border-bottom-color: var(--accent); }
+  .sitenav a.active {
+    color: var(--ink);
+    font-weight: 600;
+    border-bottom-color: var(--ink);
+  }
+  .bio {
+    display: flex;
+    gap: 44px;
+    padding: 40px 0 40px;
+    border-bottom: 1px solid var(--line);
+    align-items: flex-start;
+  }
+  .bio-col-left {
+    flex: 0 0 180px;
+    text-align: center;
+  }
+  .photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 18px;
+    border: 1px solid var(--line);
+  }
+  .contact-links-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.95rem;
+  }
+  .contact-links-vertical a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+  .contact-links-vertical a:hover { border-bottom-color: var(--accent); }
+  .bio-col-right {
+    flex: 1;
+    min-width: 0;
+    padding-top: 4px;
+  }
+  h1 {
+    font-size: 2.1rem;
+    font-weight: 500;
+    margin: 0 0 6px;
+    letter-spacing: 0.2px;
+  }
+  .role {
+    color: var(--muted);
+    font-size: 1.05rem;
+    margin: 0 0 20px;
+  }
+  .intro p {
+    margin: 0 0 16px;
+  }
+  @media (max-width: 600px) {
+    .bio { flex-direction: column; align-items: center; text-align: center; }
+    .bio-col-left { flex: none; }
+    .bio-col-right { text-align: left; }
+  }
+  section {
+    padding: 44px 0;
+  }
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0 0 18px;
+    color: var(--ink);
+  }
+  h3 {
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin: 36px 0 14px;
+    color: var(--ink);
+  }
+  h3:first-of-type { margin-top: 0; }
+  .diss-title {
+    font-style: italic;
+    margin: 0 0 16px;
+  }
+  p { margin: 0 0 16px; }
+  .meta {
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+  ul { margin: 0 0 16px; padding-left: 22px; }
+  li { margin-bottom: 10px; }
+  .pub {
+    margin-bottom: 22px;
+    padding-left: 0;
+    list-style: none;
+  }
+  .pub-title { font-style: italic; }
+  .pub-venue { color: var(--muted); }
+  .course-list {
+    padding-left: 0;
+    list-style: none;
+  }
+  .course-list li {
+    margin-bottom: 8px;
+  }
+  .course-title { font-style: italic; }
+  .placeholder {
+    color: var(--accent);
+    font-size: 0.85rem;
+    background: #f3e9e6;
+    padding: 1px 6px;
+    border-radius: 3px;
+  }
+  .btn {
+    display: inline-block;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 9px 18px;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 0.95rem;
+    margin-right: 12px;
+  }
+  .btn:hover { background: var(--accent); color: #fff; }
+  footer {
+    padding: 32px 0 60px;
+    color: var(--muted);
+    font-size: 0.88rem;
+    text-align: center;
+    border-top: 1px solid var(--line);
+    margin-top: 12px;
+  }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="sitenav">
+    <a href="index.html">About</a>
+    <a href="research.html">Research</a>
+    <a href="teaching.html" class="active">Teaching</a>
+    <a href="cv.html">CV</a>
+  </div>
+
+  <section id="teaching">
+
+    <h3>University of Southern California</h3>
+    <ul class="course-list">
+      <li><span class="course-title">The Global Economy</span> &mdash; Teaching Assistant for Ben Graham (2023)</li>
+      <li><span class="course-title">International Relations: Introductory Analysis</span> &mdash; Teaching Assistant for Han-Hui Hsieh (2022)</li>
+    </ul>
+
+    <h3>Seoul National University</h3>
+    <ul class="course-list">
+      <li><span class="course-title">China&rsquo;s Global Governance</span> &mdash; Teaching Assistant for Injoo Sohn (2019)</li>
+      <li><span class="course-title">Politics of China, China&rsquo;s Rise and Asia&rsquo;s Future</span> &mdash; Teaching Assistant for Injoo Sohn (2018)</li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> Ewon Baik
+  </footer>
+
+</div>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
